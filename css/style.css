@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap");
+
+:root {
+  --bg-color: #101113;
+  --txt-color: #565e73;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: "Ubuntu Mono", monospace;
+  color: var(--txt-color);
+}
+
+.contenti {
+  padding-top: 1rem;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+a {
+  color: #4f7fe0;
+  background-image: -webkit-linear-gradient(45deg, #4f7fe0 21%, #ebdb34 78%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.whoawe {
+  text-align: left;
+  font-size: 45px;
+  font-weight: 400;
+}
+
+.we {
+  text-align: left;
+  font-size: 20px;
+  margin-top: 10px;
+  font-weight: 400;
+
+  opacity: 0;
+  background-color: var(--bg-color);
+  animation-name: mbio;
+  animation-delay: calc(var(--delay, 0) * 1ms);
+  animation-fill-mode: forwards;
+}
+
+@keyframes mbio {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
