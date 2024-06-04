@@ -1,2 +1,2 @@
 # cumshotbotnetweb
-🧑‍💻 Minimalistick website for CumshotBotnet
+🧑‍💻 Minimalistic website for CumshotBotnet
